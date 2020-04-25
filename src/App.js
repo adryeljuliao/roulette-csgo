@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Roulette from './pages/Roulette';
+import Routes from './routes';
 
 function App() {
   return (
     <>
-      <Roulette />
+      <Routes />
     </>
   );
 }
