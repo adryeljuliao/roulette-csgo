@@ -18,7 +18,7 @@ export default function Roulette() {
     });
     const interval = setInterval(() => {
       clickBait();
-    }, 25000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
@@ -47,7 +47,7 @@ export default function Roulette() {
     setEffectRoll({
       transform: `translate3d(-${numberClick}px, 0px, 0px)`,
       transitionTimingFunction: 'cubic-bezier(0.12, 0.8, 0.38, 1)',
-      transitionDuration: '6.5s',
+      transitionDuration: '5s',
     });
     await setTimeout(function () {
       const resetPosition = 3600 - numberClick;
@@ -55,7 +55,7 @@ export default function Roulette() {
         transform: `translate3d(${resetPosition}px, 0px, 0px)`,
       });
       setNumberSelected(random);
-    }, 10000);
+    }, 7000);
     console.log(numberClick, positionsNumbers);
   }
 
